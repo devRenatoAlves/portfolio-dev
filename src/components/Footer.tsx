@@ -55,7 +55,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           <div className="md:col-span-2">
             <a href="#" className="text-xl font-medium inline-block mb-4">
-              Portfolio
+              Portfólio
             </a>
             <p className="text-muted-foreground max-w-md">
               A minimalist approach to design and development, focusing on simplicity,
@@ -96,11 +96,11 @@ export function Footer() {
           </div>
           
           <div>
-            <h3 className="font-medium mb-4">Contact</h3>
+            <h3 className="font-medium mb-4">Contato</h3>
             <ul className="space-y-3 text-muted-foreground">
-              <li>example@portfolio.com</li>
-              <li>+1 (555) 123-4567</li>
-              <li>San Francisco, CA</li>
+              <li>devrenatoalves@gmail.com</li>
+              <li>+55 (62) 98204-5506</li>
+              <li>Goiás, BR</li>
             </ul>
           </div>
         </div>
