@@ -33,16 +33,16 @@ export function Hero() {
         className="max-w-7xl mx-auto text-center space-y-8 opacity-0 transition-opacity duration-1000"
       >
         <span className="inline-block rounded-full bg-secondary dark:bg-secondary/20 px-4 py-1.5 text-sm font-medium mb-6 animate-fade-up">
-          Creative Portfolio
+          Desenvolvedor Back-End Júnior
         </span>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance mx-auto max-w-5xl leading-tight animate-fade-up" style={{ animationDelay: "100ms" }}>
-          Crafting digital experiences with purpose and precision
+          Construindo APIs robustas e infraestruturas escaláveis
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "200ms" }}>
-          A showcase of design and development projects created with attention to detail, 
-          focusing on clean aesthetics and functional simplicity.
+          Desenvolvedor back-end focado em criar soluções eficientes com Node.js, Express, 
+          MongoDB e SQL, sempre buscando aplicar boas práticas e padrões de design.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-fade-up" style={{ animationDelay: "300ms" }}>
@@ -53,7 +53,7 @@ export function Hero() {
               "transition-all hover:shadow-lg focus:ring-2 focus:ring-primary/50"
             )}
           >
-            View Projects
+            Ver Projetos
           </a>
           <a 
             href="#contact" 
@@ -62,7 +62,7 @@ export function Hero() {
               "transition-all hover:shadow-md focus:ring-2 focus:ring-secondary/50"
             )}
           >
-            Get in Touch
+            Contato
           </a>
         </div>
       </div>

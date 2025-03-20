@@ -56,7 +56,7 @@ export function About() {
   }, []);
 
   const skills = [
-    "UI/UX Design", "Web Development", "Mobile Design", "Product Strategy"
+    "Node.js", "Express", "MongoDB", "SQL", "API RESTful", "GraphQL", "Docker", "Git"
   ];
 
   return (
@@ -72,29 +72,29 @@ export function About() {
             className="opacity-0 -translate-x-8 transition-all duration-1000 ease-out"
           >
             <span className="inline-block rounded-full bg-secondary dark:bg-secondary/20 px-4 py-1.5 text-sm font-medium mb-6">
-              About Me
+              Sobre Mim
             </span>
 
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Designing with purpose and intention
+              Desenvolvendo o que não se vê, mas é essencial
             </h2>
 
             <div className="space-y-5 text-muted-foreground">
               <p>
-                I'm a passionate designer and developer focused on creating digital experiences that are both beautiful and functional. With a keen eye for detail and a commitment to user-centered design, I strive to build products that make a meaningful impact.
+                Sou um desenvolvedor back-end júnior apaixonado por construir a infraestrutura e lógica que sustentam aplicações web modernas. Meu foco está em criar APIs eficientes, gerenciar bancos de dados e implementar regras de negócio com código limpo e bem estruturado.
               </p>
 
               <p>
-                My approach combines aesthetic sensitivity with technical knowledge, allowing me to create solutions that are not only visually appealing but also technically sound and accessible to all users.
+                Formado em Ciência da Computação, atualmente estou expandindo meus conhecimentos em arquiteturas de microsserviços, práticas de DevOps e segurança de aplicações. Acredito que boas soluções back-end são aquelas que proporcionam escalabilidade, desempenho e manutenibilidade.
               </p>
 
               <p>
-                I believe in the power of simplicity, taking inspiration from the philosophy that good design is as little design as possible. This mindset guides my work, helping me create clean, intuitive, and purposeful digital products.
+                Estou sempre em busca de novos desafios que me permitam aplicar e aprimorar minhas habilidades técnicas. Sou um entusiasta de código aberto e contribuo regularmente para projetos da comunidade.
               </p>
             </div>
 
             <div className="mt-8">
-              <h3 className="text-lg font-semibold mb-4">Core Skills</h3>
+              <h3 className="text-lg font-semibold mb-4">Tecnologias</h3>
               <div className="flex flex-wrap gap-2">
                 {skills.map((skill, index) => (
                   <span 
@@ -114,8 +114,8 @@ export function About() {
           >
             <div className="rounded-2xl overflow-hidden bg-card shadow-lg relative aspect-[4/5]">
               <img 
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000&q=80" 
-                alt="Designer working at desk"
+                src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000&q=80" 
+                alt="Desenvolvedor trabalhando"
                 className="w-full h-full object-cover"
                 loading="lazy"
               />

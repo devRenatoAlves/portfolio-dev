@@ -14,34 +14,34 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "Minimalist E-commerce",
-    description: "A clean, user-focused shopping experience with intuitive navigation and seamless checkout.",
-    category: "Web Design",
-    imageUrl: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    title: "API RESTful de Gerenciamento",
+    description: "API completa para sistema de gerenciamento de tarefas com autenticação JWT, validação de dados e documentação com Swagger.",
+    category: "Node.js / Express",
+    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "#"
   },
   {
     id: 2,
-    title: "Portfolio Dashboard",
-    description: "An elegant dashboard interface for creatives to showcase their work with detailed analytics.",
-    category: "UI/UX Design",
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    title: "Microserviço de Notificações",
+    description: "Sistema de microserviços para envio de notificações por email e SMS, utilizando filas com RabbitMQ para processamento assíncrono.",
+    category: "Microserviços",
+    imageUrl: "https://images.unsplash.com/photo-1607798748738-b15c40d33d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "#"
   },
   {
     id: 3,
-    title: "Productivity App",
-    description: "A focus-oriented task management system with clean interface and intuitive organization tools.",
-    category: "Mobile App",
-    imageUrl: "https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    title: "CLI para Automação",
+    description: "Ferramenta de linha de comando para automação de tarefas de desenvolvimento, como criação de componentes e migrações de banco de dados.",
+    category: "Node.js",
+    imageUrl: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "#"
   },
   {
     id: 4,
-    title: "Smart Home Controller",
-    description: "An integrated system for managing connected devices with a focus on accessibility and simplicity.",
-    category: "IoT Design",
-    imageUrl: "https://images.unsplash.com/photo-1558002038-bb0237f4bf6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
+    title: "API GraphQL",
+    description: "Backend GraphQL para aplicação web com resolvers otimizados, autenticação e autorização baseada em papéis.",
+    category: "GraphQL / Apollo",
+    imageUrl: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "#"
   }
 ];
@@ -102,13 +102,13 @@ export function Projects() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <span className="inline-block rounded-full bg-secondary dark:bg-secondary/20 px-4 py-1.5 text-sm font-medium mb-6">
-            Featured Work
+            Meus Projetos
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Selected Projects
+            Principais Trabalhos
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A curated collection of my most significant work, showcasing my approach to design challenges and technical implementation.
+            Uma seleção dos meus projetos mais relevantes em desenvolvimento back-end, destacando minhas habilidades técnicas e resolução de problemas.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ export function Projects() {
                     {project.description}
                   </p>
                   <div className="mt-6 inline-flex items-center text-sm font-medium">
-                    View Details
+                    Ver Detalhes
                     <svg 
                       className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" 
                       xmlns="http://www.w3.org/2000/svg" 
