@@ -9,6 +9,7 @@ type Project = {
   category: string;
   imageUrl: string;
   link: string;
+  status: 'completed' | 'pending';
 };
 
 const projects: Project[] = [
@@ -18,7 +19,8 @@ const projects: Project[] = [
     description: "API completa para sistema de gerenciamento de tarefas com autenticação JWT, validação de dados e documentação com Swagger.",
     category: "Node.js / Express",
     imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "#"
+    link: "#",
+    status: 'completed'
   },
   {
     id: 2,
@@ -26,7 +28,8 @@ const projects: Project[] = [
     description: "Sistema de microserviços para envio de notificações por email e SMS, utilizando filas com RabbitMQ para processamento assíncrono.",
     category: "Microserviços",
     imageUrl: "https://images.unsplash.com/photo-1607798748738-b15c40d33d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "#"
+    link: "#",
+    status: 'pending'
   },
   {
     id: 3,
@@ -34,7 +37,8 @@ const projects: Project[] = [
     description: "Ferramenta de linha de comando para automação de tarefas de desenvolvimento, como criação de componentes e migrações de banco de dados.",
     category: "Node.js",
     imageUrl: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "#"
+    link: "#",
+    status: 'pending'
   },
   {
     id: 4,
@@ -42,7 +46,8 @@ const projects: Project[] = [
     description: "Backend GraphQL para aplicação web com resolvers otimizados, autenticação e autorização baseada em papéis.",
     category: "GraphQL / Apollo",
     imageUrl: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "#"
+    link: "#",
+    status: 'pending'
   }
 ];
 
@@ -108,7 +113,7 @@ export function Projects() {
             Principais Trabalhos
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Uma seleção dos meus projetos mais relevantes em desenvolvimento back-end, destacando minhas habilidades técnicas e resolução de problemas.
+            Uma seleção dos meus projetos, incluindo trabalhos concluídos e os que estou atualmente desenvolvendo.
           </p>
         </div>
 
@@ -119,23 +124,41 @@ export function Projects() {
               ref={el => (itemsRef.current[index] = el)}
               className={cn(
                 "project-card opacity-0 translate-y-8 transition-all duration-700 ease-out",
-                "bg-card border rounded-2xl overflow-hidden"
+                "bg-card border rounded-2xl overflow-hidden",
+                project.status === 'pending' && "opacity-70"
               )}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               <a href={project.link} className="block">
-                <div className="aspect-video w-full overflow-hidden">
+                <div className="aspect-video w-full overflow-hidden relative">
                   <img 
                     src={project.imageUrl} 
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-500 ease-out hover:scale-105"
+                    className={cn(
+                      "w-full h-full object-cover transition-transform duration-500 ease-out",
+                      project.status === 'completed' ? "hover:scale-105" : "filter grayscale"
+                    )}
                     loading="lazy"
                   />
+                  {project.status === 'pending' && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/40">
+                      <span className="px-3 py-1 bg-yellow-500/90 text-black text-sm font-medium rounded">
+                        Em Desenvolvimento
+                      </span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-6 md:p-8">
-                  <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
-                    {project.category}
-                  </span>
+                  <div className="flex justify-between items-center">
+                    <span className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+                      {project.category}
+                    </span>
+                    {project.status === 'completed' && (
+                      <span className="text-xs bg-green-500/20 text-green-600 dark:text-green-400 px-2 py-1 rounded">
+                        Concluído
+                      </span>
+                    )}
+                  </div>
                   <h3 className="text-xl md:text-2xl font-semibold mt-2">
                     {project.title}
                   </h3>
@@ -143,7 +166,7 @@ export function Projects() {
                     {project.description}
                   </p>
                   <div className="mt-6 inline-flex items-center text-sm font-medium">
-                    Ver Detalhes
+                    {project.status === 'completed' ? "Ver Detalhes" : "Acompanhar Progresso"}
                     <svg 
                       className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" 
                       xmlns="http://www.w3.org/2000/svg" 
