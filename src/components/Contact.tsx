@@ -43,8 +43,8 @@ export function Contact() {
       if (formRef.current) formRef.current.reset();
 
       toast({
-        title: "Message sent successfully",
-        description: "Thank you for reaching out. I'll respond as soon as possible.",
+        title: "Mensagem enviada com sucesso",
+        description: "Obrigado por entrar em contato. Responderei o mais breve possível.",
       });
     }, 1500);
   };
@@ -128,7 +128,7 @@ export function Contact() {
               )}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Sending..." : "Enviar  "}
+              {isSubmitting ? "Enviando..." : "Enviar  "}
             </Button>
           </form>
         </div>

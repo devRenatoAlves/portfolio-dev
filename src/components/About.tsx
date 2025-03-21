@@ -85,7 +85,7 @@ export function About() {
               </p>
 
               <p>
-                Cursando análise e desenvolvimento de sistemas, atualmente estou expandindo meus conhecimentos em arquiteturas de microsserviços, práticas de DevOps e segurança de aplicações. Acredito que boas soluções back-end são aquelas que proporcionam escalabilidade, desempenho e manutenibilidade.
+                Cursando análise e desenvolvimento de sistemas, atualmente estou expandindo meus conhecimentos em arquiteturas de microsserviços, práticas de segurança de aplicações. Acredito que boas soluções back-end são aquelas que proporcionam escalabilidade, desempenho e manutenibilidade.
               </p>
 
               <p>
@@ -114,7 +114,7 @@ export function About() {
           >
             <div className="rounded-2xl overflow-hidden bg-card shadow-lg relative aspect-[4/5]">
               <img 
-                src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=1000&q=80" 
+                src="/wendel.jpg" 
                 alt="Desenvolvedor trabalhando"
                 className="w-full h-full object-cover"
                 loading="lazy"
