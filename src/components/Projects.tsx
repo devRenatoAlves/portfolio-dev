@@ -15,11 +15,11 @@ type Project = {
   const projects: Project[] = [
     {
       id: 1,
-      title: "API REST de Gerenciamento",
-      description: "STOKS - API para sistema de gerenciamento de estoque com autenticação JWT e  integrada em um banco de dados,validação de dados.",
+      title: "STOKS - API de gerenciamento de estoque",
+      description: "STOKS - API REST para sistema de gerenciamento de estoque com autenticação JWT e  integrada em um banco de dados,validação de dados.",
       category: "Node.js / Express.js / MySQL",
       imageUrl: "/stoks.png",
-      link: "#",
+      link: "https://github.com/devRenatoAlves/projeto-stok",
       status: 'completed'
     },
   {
