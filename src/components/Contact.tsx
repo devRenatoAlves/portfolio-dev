@@ -57,14 +57,14 @@ export function Contact() {
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
-          <span className="inline-block rounded-full bg-secondary dark:bg-secondary/20 px-4 py-1.5 text-sm font-medium mb-6">
-            Get in Touch
+          <span className="inline-block rounded-full bg-secondary dark:bg-secondary/20 px-4 py-1.5 text-sm font-medium mb-6"> 
+            Entre em contato
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Let's start a conversation
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">    
+        Vamos começar uma conversa
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Have a project in mind or want to explore possibilities? I'm always open to discussing new ideas and opportunities.
+          Tem um projeto em mente ou quer explorar possibilidades? Estou sempre aberto a discutir novas ideias e oportunidades.
           </p>
         </div>
 
@@ -73,23 +73,23 @@ export function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium">
-                  Your Name
+                  Seu nome
                 </label>
                 <Input
                   id="name"
-                  placeholder="Enter your name"
+                  placeholder="Coloque seu nome"
                   className="bg-background/50 border-border/50 focus:border-primary"
                   required
                 />
               </div>
               <div className="space-y-2">
                 <label htmlFor="email" className="text-sm font-medium">
-                  Email Address
+                  E-mail
                 </label>
                 <Input
                   id="email"
                   type="email"
-                  placeholder="you@example.com"
+                  placeholder="fulano@example.com"
                   className="bg-background/50 border-border/50 focus:border-primary"
                   required
                 />
@@ -98,11 +98,11 @@ export function Contact() {
 
             <div className="space-y-2">
               <label htmlFor="subject" className="text-sm font-medium">
-                Subject
+                Assunto
               </label>
               <Input
                 id="subject"
-                placeholder="What is this regarding?"
+                placeholder="Qual é o assunto?"
                 className="bg-background/50 border-border/50 focus:border-primary"
                 required
               />
@@ -110,11 +110,11 @@ export function Contact() {
 
             <div className="space-y-2">
               <label htmlFor="message" className="text-sm font-medium">
-                Your Message
+                Sua mensagem
               </label>
               <Textarea
                 id="message"
-                placeholder="Share your thoughts or project details..."
+                placeholder="Mensagem"
                 className="min-h-[150px] bg-background/50 border-border/50 focus:border-primary"
                 required
               />
@@ -128,7 +128,7 @@ export function Contact() {
               )}
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? "Sending..." : "Enviar  "}
             </Button>
           </form>
         </div>

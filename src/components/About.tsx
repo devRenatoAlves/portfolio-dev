@@ -56,7 +56,7 @@ export function About() {
   }, []);
 
   const skills = [
-    "Node.js", "Express", "MongoDB", "SQL", "API RESTful", "GraphQL", "Docker", "Git"
+    "TypeScript", "Node.js", "Express", "SQL", "API RESTful", "Docker", "Git", "POO", "SOLID"
   ];
 
   return (
@@ -76,16 +76,16 @@ export function About() {
             </span>
 
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              Desenvolvendo o que não se vê, mas é essencial
+              Renato Alves
             </h2>
 
             <div className="space-y-5 text-muted-foreground">
               <p>
-                Sou um desenvolvedor back-end júnior apaixonado por construir a infraestrutura e lógica que sustentam aplicações web modernas. Meu foco está em criar APIs eficientes, gerenciar bancos de dados e implementar regras de negócio com código limpo e bem estruturado.
+                Sou um desenvolvedor back-end apaixonado por construir a infraestrutura e lógica que sustentam aplicações web modernas. Meu foco está em criar APIs eficientes, gerenciar bancos de dados e implementar regras de negócio com código limpo e bem estruturado.
               </p>
 
               <p>
-                Formado em Ciência da Computação, atualmente estou expandindo meus conhecimentos em arquiteturas de microsserviços, práticas de DevOps e segurança de aplicações. Acredito que boas soluções back-end são aquelas que proporcionam escalabilidade, desempenho e manutenibilidade.
+                Cursando análise e desenvolvimento de sistemas, atualmente estou expandindo meus conhecimentos em arquiteturas de microsserviços, práticas de DevOps e segurança de aplicações. Acredito que boas soluções back-end são aquelas que proporcionam escalabilidade, desempenho e manutenibilidade.
               </p>
 
               <p>

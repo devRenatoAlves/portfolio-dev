@@ -33,16 +33,16 @@ export function Hero() {
         className="max-w-7xl mx-auto text-center space-y-8 opacity-0 transition-opacity duration-1000"
       >
         <span className="inline-block rounded-full bg-secondary dark:bg-secondary/20 px-4 py-1.5 text-sm font-medium mb-6 animate-fade-up">
-          Desenvolvedor Back-End Júnior
+          Desenvolvedor Back-End
         </span>
         
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-balance mx-auto max-w-5xl leading-tight animate-fade-up" style={{ animationDelay: "100ms" }}>
-          Construindo APIs robustas e infraestruturas escaláveis
+          Renato Alves
         </h1>
         
         <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto animate-fade-up" style={{ animationDelay: "200ms" }}>
-          Desenvolvedor back-end focado em criar soluções eficientes com Node.js, Express, 
-          MongoDB e SQL, sempre buscando aplicar boas práticas e padrões de design.
+          Desenvolvedor back-end focado em criar soluções eficientes com Typescript, Node.js, 
+          Express e SQL. Sempre buscando aplicar boas práticas e qualidade.
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 animate-fade-up" style={{ animationDelay: "300ms" }}>

@@ -22,9 +22,9 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "#home" },
-    { name: "Projects", href: "#projects" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" }
+    { name: "Projetos", href: "#projects" },
+    { name: "Sobre", href: "#about" },
+    { name: "Contato", href: "#contact" }
   ];
 
   return (
@@ -41,7 +41,7 @@ export function Navbar() {
           href="#" 
           className="relative z-10 text-xl font-medium tracking-tight"
         >
-          Portfolio
+          Renato Alves
         </a>
 
         {/* Desktop Navigation */}

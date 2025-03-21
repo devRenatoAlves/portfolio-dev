@@ -12,39 +12,39 @@ type Project = {
   status: 'completed' | 'pending';
 };
 
-const projects: Project[] = [
-  {
-    id: 1,
-    title: "API RESTful de Gerenciamento",
-    description: "API completa para sistema de gerenciamento de tarefas com autenticação JWT, validação de dados e documentação com Swagger.",
-    category: "Node.js / Express",
-    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
-    link: "#",
-    status: 'completed'
-  },
+  const projects: Project[] = [
+    {
+      id: 1,
+      title: "API REST de Gerenciamento",
+      description: "STOKS - API para sistema de gerenciamento de estoque com autenticação JWT e  integrada em um banco de dados,validação de dados.",
+      category: "Node.js / Express.js / MySQL",
+      imageUrl: "/stoks.png",
+      link: "#",
+      status: 'completed'
+    },
   {
     id: 2,
-    title: "Microserviço de Notificações",
-    description: "Sistema de microserviços para envio de notificações por email e SMS, utilizando filas com RabbitMQ para processamento assíncrono.",
-    category: "Microserviços",
+    title: "Em breve",
+    description: "Em breve.",
+    category: "",
     imageUrl: "https://images.unsplash.com/photo-1607798748738-b15c40d33d57?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "#",
     status: 'pending'
   },
   {
     id: 3,
-    title: "CLI para Automação",
-    description: "Ferramenta de linha de comando para automação de tarefas de desenvolvimento, como criação de componentes e migrações de banco de dados.",
-    category: "Node.js",
+    title: "Em breve",
+    description: "Em breve.",
+    category: "",
     imageUrl: "https://images.unsplash.com/photo-1629654297299-c8506221ca97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "#",
     status: 'pending'
   },
   {
     id: 4,
-    title: "API GraphQL",
-    description: "Backend GraphQL para aplicação web com resolvers otimizados, autenticação e autorização baseada em papéis.",
-    category: "GraphQL / Apollo",
+    title: "Em Breve",
+    description: "Em breve.",
+    category: "",
     imageUrl: "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600&q=80",
     link: "#",
     status: 'pending'
